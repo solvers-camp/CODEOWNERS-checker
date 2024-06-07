@@ -1,0 +1,12 @@
+name: 'Check and Create PR CODEOWNERS'
+description: 'Checks and creates PR for CODEOWNERS'
+inputs:
+  github-token:
+    description: 'GitHub token'
+    required: true
+  source-repo:
+    description: 'Source repository'
+    required: true
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
